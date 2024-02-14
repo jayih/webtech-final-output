@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main_website</title>
+    <script src="https://kit.fontawesome.com/1f703216b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="main.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/1.png" width="100%" id="MainImg" alt="">
+        </div>
+
+        <div class="small-image-group">
+            <div class="small-image-col">
+                <img src="img/products/2.png" width="100%" class="small-image" alt="">
+            </div>
+            <div class="small-image-col">
+                <img src="img/products/3.png" width="100%" class="small-image" alt="">
+            </div>
+            <div class="small-image-col">
+                <img src="img/products/4.png" width="100%" class="small-image" alt="">
+            </div>
+            <div class="small-image-col">
+                <img src="img/products/5.png" width="100%" class="small-image" alt="">
+            </div>
+        </div>
+
+    <div class="single-pro-details">
+        <h6>Home/Flowers</h6>
+        <h4>Flower Balloon</h4>
+        <h2>Php 250.00</h2>
+        <input type="number" value="1">
+        <button>Add To Cart</button>
+        <h4>Product Details</h4>
+        <p>
+            An amazing product to gift to your special someone, your loved ones,
+            a family, and/or friend. Made purely with delicate hands. 
+            Nothing can compare to the thoughtful process of handmade products. Spread Love!
+        </p>
+    </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo2.png" alt="" height="100px">
+            <h4>Contact</h4>
+            <p><strong>Adress:</strong> PUPBC</p>
+            <p><strong>Phone:</strong> PUPBC</p>
+            <p><strong>Hours:</strong> PUPBC</p>
+        </div>
+
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="#">Delivery Information</a> <br>
+            <a href="#">Privacy Policy</a> <br>
+            <a href="#">Terms and Conditions</a> <br>
+            <a href="#">Contact Us</a> <br>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a> <br>
+            <a href="#">View Cart</a> <br>
+            <a href="#">My Wishlist</a> <br>
+            <a href="#">Track My Order</a> <br>
+            <a href="#">Help</a> <br>
+        </div>
+
+        <div class="copyright">
+            <p>(C) 2024, Final Output for Web Technology and Programming </p> <br>
+            <h4>DISCLAIMER!</h4>
+            <p>All above information are fictitious. None of the said organization, store name, products, and prices are true. All used photos are rightfully credited to its owner. <br> Below are the links for each photo used.<br>
+            <a href="https://www.tumblr.com/png-magician/728119441043456000?source=share">flower balloons, </a>
+            <a href="https://www.tumblr.com/lunanabang/712760301013057536/a-heavy-burden-1-8-3-1-8-9-visit-my?source=share">handmade keychains, and </a>
+            <a href="https://www.tumblr.com/saizun/718042889854337024/%CB%8F%CB%8B-%F0%96%A5%94-%F0%93%84%B9-flower-tea-cups-%EF%BE%9F-%F0%93%88%92?source=share">fairy teacups</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimage = document.getElementsByClassName("small-image");
+
+        smallimage[0].onclick = function(){
+            MainImg.src = smallimage[0].src;
+        }
+
+        smallimage[1].onclick = function(){
+            MainImg.src = smallimage[1].src;
+        }
+
+        smallimage[2].onclick = function(){
+            MainImg.src = smallimage[2].src;
+        }
+
+        smallimage[3].onclick = function(){
+            MainImg.src = smallimage[3].src;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
